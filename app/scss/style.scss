@@ -1,11 +1,11 @@
-@import "vars";
-@import "global";
-@import "fonts";
+@import 'vars';
+@import 'global';
+@import 'fonts';
 
 /* start header */
 
 .header {
-  background: #f4f6f5;
+  background: #fff;
 }
 .header__top-inner {
   display: flex;
@@ -102,6 +102,7 @@
   }
 }
 .basket {
+  margin-right: 20px;
   span {
     background-color: $green;
   }
@@ -116,7 +117,6 @@
   }
 }
 .user {
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -173,6 +173,7 @@
 .circle__menu {
   position: absolute;
   top: 62px;
+  z-index: 1;
 }
 .user__box,
 .basket__box,
@@ -302,6 +303,10 @@
 }
 .icons-color::before {
   color: $orange;
+}
+.header__btn-menu,
+.menu__btn{
+  display: none;
 }
 
 /* end header */
@@ -1246,3 +1251,5 @@ button.icon-unsorted {
   }
 }
 // end product page
+
+@import 'media';
