@@ -58,17 +58,17 @@ $(function(){
       $('.icon-th-list').removeClass('active');
    });
    
-   $('.product-one__tabs .tab').on('click', function(event) {
+   $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
     var id = $(this).attr('data-id');
-      $('.product-one__tabs').find('.tab-item').removeClass('active-tab').hide();
-      $('.product-one__tabs').find('.tab').removeClass('active');
+      $('.product-one__tabs, .settings__tabs').find('.tab-item').removeClass('active-tab').hide();
+      $('.product-one__tabs, .settings__tabs .tab').find('.tab').removeClass('active');
       $(this).addClass('active');
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
     });
     
    
-     $('input[type="file"], select').styler();
+     $('input[type="file"], select').destroy();
    
      $('.menu__btn').on('click', function () {
        $('.menu__list').slideToggle();
