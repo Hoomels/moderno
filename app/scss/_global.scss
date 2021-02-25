@@ -1,7 +1,6 @@
 html{
    box-sizing: border-box;
 }
-
 html,
 body{
    height: 100%;
@@ -14,13 +13,11 @@ body{
    box-sizing: inherit;
 }
 html,
-
 a{
    display: inline-block;
    text-decoration: none;
    color: $text;
 }
-
 ul,
 li{
    margin: 0;
@@ -33,7 +30,6 @@ body{
    font-size: 15px;
    line-height: 24px;
    color: $text;
-   overflow-x: hidden;
 }
 .wrapper{
    display: flex;
